@@ -4,7 +4,7 @@ const db = require("../model/helper");
 
 /* gets all recipes  */
 router.get('/', function(req, res, next) {
-  db("SELECT * FROM recipe;")
+  db("SELECT * FROM recipe LEFT JOIN ingredients ON recipe.id = ingredients.recipe_id;")
   .then(results => {
     res.send(results.data);
   })
