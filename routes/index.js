@@ -36,15 +36,27 @@ router.get('/', async function(req, res, next) {
 });
 
 // // get ONE recipe
-// router.get("/:id", async (req, res) => {
-//   let recipeId = req.params.id;
-//   try {
-//     const results = await db(`SELECT * FROM recipe LEFT JOIN ingredients ON recipe.id = recipe_id`);
-//     res.send(results.data);
-//   } catch (err) {
-//     res.status(500).send({ error: err.message });
-//   }
-// });
+router.get("/recipe/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    let query= `
+    SELECT 
+    JSON_ARRAYAGG(JSON_OBJECT( 'title', r.title, 'image', r.image, 'description', r.description, 'servings', r.servings, 'notes', r.notes, 'ingredient', i.ingredient)) 
+    FROM recipe r LEFT JOIN ( SELECT recipe_id, JSON_ARRAYAGG(JSON_OBJECT('name', name, 'amount', amount, 'measurement unit', measurement_unit)) ingredient 
+    FROM ingredients GROUP BY recipe_id) i ON i.recipe_id = r.id WHERE r.id = ${id} 
+    `
+  const results = await db(query)
+  // results.data returns an array of objects, in this case JSONARRAYGG returns only one full object, so we access that object with [0]
+  //object.values to not return the entire object (key+value) but only the value, but it returns it as an array and we extract that in a variable to have only a string
+    const obj = Object.values(results.data[0]);
+  //creating a json from a string, accessing to position [0] since it comes as an array
+    const response = JSON.parse(obj[0])
+
+    res.send(response);
+  } catch (err) {
+    res.status(500).send({ error: err.message });
+  }
+});
 
 
 router.post("/recipe", async (req, res, next) => {
@@ -87,7 +99,7 @@ router.post("/ingredients", async (req, res, next) => {
 });
 
 
-router.delete("/:id", async function(req, res, next) {
+router.delete("/recipe/:id", async function(req, res, next) {
   const { id } = req.params;
   try {
     await db(`DELETE FROM recipe WHERE id=${id}`);
