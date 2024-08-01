@@ -1,19 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Routes, Route, Link} from "react-router-dom"
+import RecipesForm from './components/RecipesForm'
+import SingleRecipe from './components/SingleRecipe'
+import AllRecipes from './components/AllRecipes'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-    <h1>My recipes</h1>
-    <label>Add ingredients</label>
-    <input type="text"></input>
-    <button type="submit">Add</button>
+  
+      <h1>My recipes</h1>
+      <div className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/SingleRecipe">Single recipe</Link>
+        <Link to="/RecipesForm">Submit a recipe</Link>
+      </div>
+
+      <Routes>
+        <Route path="/" element={< AllRecipes />} />
+        <Route path="/SingleRecipe" element={< SingleRecipe />} />
+        <Route path="/RecipesForm" element={< RecipesForm />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+export default App;
