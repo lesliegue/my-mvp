@@ -26,7 +26,7 @@ async function getAllRecipes(req) {
 }
 
 /* gets all recipes  */
-router.get('/', async function(req, res, next) {
+router.get('/recipes', async function(req, res, next) {
   try {
     const recipes = await getAllRecipes(req);
     res.send(recipes);
