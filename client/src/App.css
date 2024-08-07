@@ -1,11 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600px;
+  font-size: 1.7em;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  padding: 3px 12px;
+  color: #321710;
+  background-color: #C89B9F;
+  border-radius: 10px;
+  margin: 0 2px 5px 0;
+  padding: 3px 12px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin: auto;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #AE283F;
+  font-size: large;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

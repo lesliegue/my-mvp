@@ -1,0 +1,42 @@
+RECIPES
+
+{"title": "",
+"image": "",
+"description": "",
+"servings": ,
+"notes": ""}
+
+{"title": "Harry Potter chocolate themed cake",
+"image": "https://i.postimg.cc/Gms81BPV/20240721-000526.jpg",
+"description": "First, start by beating the eggs with the sugar in a mixer in the highest setting till they are fluffy, which takes about 8 minutes. Then add the oil, and after, set the mixer to the lowest and start adding the flour and cocoa powder one teaspoon at the time, to make sure we don't loose all the air incorporated previously on the eggs. Finish with the milk and warm water and distribute evenly into 3 29cm pans, then take to the oven to be baked for 30 minutes at 180° C. Once they are ready, cover in plastic wrapper to keep the moisture in and let rest till cool. Soak in chocolate syrup and assemble the cake with fillings and frosting per taste if neccessary.",
+"servings": "35",
+"notes": "This was for a potterhead's birthday, and took around 5 hours total for making. All decoration is optional, but the cake itself is to die for!"}
+
+{"title": "New York Cheesecake",
+"image": "https://i.postimg.cc/prHss7js/20240727-205600.jpg",
+"description": "The first thing we need to do is create the cookie base for the cheesecake. We start by crushing the cookies as finely as possible till we get almost a cookie powder, this can be made by hand with a rolling pin or in a food processor. We incorporate the butter and mix until making a grainy paste, and start pressing it down on a 18cm mold with the help of a glass vase. Put it in the freezer for at least 10min. For the filling, start beating the cream cheese till it has a smooth consistency, and add the rest of the ingredients till combined. Pour the batter on top of the cookie base and bake in a water bath for 50 minutes at 160° C. Once it''s ready and has cooled down, top with the jam and let it rest in the fridge for 3 to 4 hours before serving.",
+"servings": "10",
+"notes": "Quite easy to make and very yummy, can be elevated by making the jam at home. Also would be great with different types of toppings"}
+
+{"title": "Pineapple Upside Down cake",
+"image": "https://i.postimg.cc/NFbw6WXZ/Imagen-de-Whats-App-2024-08-07-a-las-10-24-10-67a32f4d.jpg",
+"description": "The magic behind this recipe is that the topping is made before the actual cake. Start with the caramel, put the sugar, water and pineapple juice in a pan on medium heat till the sugar is completely melted and is golden brown in color. Carefully pour the caramel in a 23cm mold and place slices of pineapple to your liking. Put aside, and start beating the butter and sugar with a mixer till it has a smooth consistency, add the eggs one by one and finish by alternating between the flour, the milk and the pineapple juice. Pour on the previously prepped mold and bake for 45 minutes at 180° C. When finished, let the cake rest for 10min and immediately take out of the mold to avoid getting the caramel cold and hard, which would make it harder to serve. Decorate with a couple maraschino cherries at the top and enjoy.",
+"servings": 12,
+"notes": "Takes little time to make and can be enjoyed either warm or at room temperature. Add a little rum to the batter for an extra kick in flavor. Same formula can be used with diferent fruits such as apples or peaches."}
+
+{"title": "Profiteroles",
+"image": "https://i.postimg.cc/SRmg3YW3/20240607-233749.jpg",
+"description": "Place the water, salt, sugar and butter in a pot on medium heat till the butter melts, then add the flour and mix energetically untill everything is combined and becomes a thick paste. Move the batter to a bowl and start adding the eggs one by one, careful to not get burned, until silky and smooth. Place in a piping bag with no tip added and press vertically against a baking tray previously covered with oil or baking paper to create little peaks. Try to make them all the same size and finish by gently pressing your finger with a little water at the very top of the profiterol to close any hole that could make it pop during the baking process. This is a very airy pastry that is supposed to be mostly empty inside in order to be filled. Bake in the oven for 25 minutes at 180° C. For the filling, the classic option is custard cream, which is made by simply mixing all ingredients in a blender and then cooking in a pan on low heat till thickened. Move to a bowl covered with plastic wrapper and let cool to room temperature, then place on a piping bag and fill each profiterol and it is ready to eat.",
+"servings": 25,
+"notes": "Depending on the size of each profiterol you could have anywhere from 20 to 45 units. The choux pastry is very versatile and may be accompanied by either sweet or savory fillings. Bite-sized delicacy great for parties and dessert tables."}
+
+*///////////////////////////*
+INGREDIENTS
+
+{"name": "Eggs",
+"amount": 8,
+"measurement_unit": "unit"}
+
+{"name": "",
+"amount": 0,
+"measurement_unit": ""}

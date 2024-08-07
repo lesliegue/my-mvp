@@ -1,0 +1,60 @@
+.home {
+    background-color: rgba(222, 236, 222, 0.884);
+    height: 102%;
+    padding-top: 10px;
+    width: 1000px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  hr.dashed {
+    border-top: 4px dashed #bbbbbbcc;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .home-p {
+    position : relative;
+    height : 5%;
+    width : 70%;
+    text-align : center;
+    margin : auto;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 30px 30px 30px 30px;
+  }
+  
+  .submit-button {
+    margin: auto;
+  }
+  
+  .recipes-list > a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .ingredientTable > table, th, td {
+    border:1px solid black;
+    width: 150px;
+    margin: auto; 
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .recipe-single > img {
+    width: 50%;
+    padding: 30px;
+    cursor: pointer;
+  }

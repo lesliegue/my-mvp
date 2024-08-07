@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import {Link, Outlet} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import './Home.css';
 
 export default function AllRecipes() {
     const [recipes, setRecipes] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         getAllRecipes();
@@ -18,19 +20,28 @@ export default function AllRecipes() {
         }
       }
 
+      const handleClick = (id) => {
+        console.log(id);
+        navigate(`/SingleRecipe/${id}`);
+      };
+
     return (
-        <div>
-            <h1>All my recipes</h1>
-            <div className="recipes-listS">
+        <div className="recipes-list">
+            <h3>All my recipes</h3>
+            <div className="grid">
                 {/* recipes.ingredients.map to get ingredients showing */}
-                {recipes.map((recipe) => (
-                    <Link to={`/recipes/${recipe.id}`} key={recipe.id}>
-                        {recipe.title}
-                    </Link>
-                ))}
+                {recipes.length > 0 ? recipes.map((recipe) => (
+                    <div className="recipe-single">
+                        <h2 key={recipe.id} onClick={() => handleClick(recipe.id)}>
+                            {recipe.title} 
+                        </h2>
+                        <img src={recipe.image} onClick={() => handleClick(recipe.id)}>
+                        </img>
+                        <hr class="dashed"></hr>
+                    </div>
+                )):null}
             </div>
             <div>
-                <Outlet />
             </div>
         </div>
     )

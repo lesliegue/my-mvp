@@ -1,0 +1,27 @@
+.sr-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 30px 30px 30px 30px;
+    line-height: 1.8;
+    justify-content: center;
+    align-items: center;
+}
+
+.sr-container {
+    height: 85%;
+}
+
+img {
+    width: 40%;
+    border-radius: 10px;
+    
+}
+
+tr:nth-of-type(odd) {
+    background-color: #D5CDCD;
+}
+
+tr:nth-of-type(even) {
+    background-color:#DFCAC0;
+}

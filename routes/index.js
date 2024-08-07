@@ -12,7 +12,7 @@ async function getAllRecipes(req) {
   //Harder to read, but gets results in a generated json that creates an array for ingredients 
   let query= `
     SELECT 
-    JSON_ARRAYAGG(JSON_OBJECT( 'title', r.title, 'image', r.image, 'description', r.description, 'servings', r.servings, 'notes', r.notes, 'ingredient', i.ingredient)) 
+    JSON_ARRAYAGG(JSON_OBJECT( 'id', r.id, 'title', r.title, 'image', r.image, 'description', r.description, 'servings', r.servings, 'notes', r.notes, 'ingredient', i.ingredient)) 
     FROM recipe r LEFT JOIN ( SELECT recipe_id, JSON_ARRAYAGG(JSON_OBJECT('name', name, 'amount', amount, 'measurement unit', measurement_unit)) ingredient 
     FROM ingredients GROUP BY recipe_id) i ON i.recipe_id = r.id 
     `
@@ -36,13 +36,13 @@ router.get('/recipes', async function(req, res, next) {
 });
 
 // // get ONE recipe
-router.get("/recipe/:id", async (req, res) => {
+router.get("/recipes/:id", async (req, res) => {
   const { id } = req.params;
   try {
     let query= `
     SELECT 
-    JSON_ARRAYAGG(JSON_OBJECT( 'title', r.title, 'image', r.image, 'description', r.description, 'servings', r.servings, 'notes', r.notes, 'ingredient', i.ingredient)) 
-    FROM recipe r LEFT JOIN ( SELECT recipe_id, JSON_ARRAYAGG(JSON_OBJECT('name', name, 'amount', amount, 'measurement unit', measurement_unit)) ingredient 
+    JSON_ARRAYAGG(JSON_OBJECT( 'id', r.id, 'title', r.title, 'image', r.image, 'description', r.description, 'servings', r.servings, 'notes', r.notes, 'ingredient', i.ingredient)) 
+    FROM recipe r LEFT JOIN ( SELECT recipe_id, JSON_ARRAYAGG(JSON_OBJECT('name', name, 'amount', amount, 'measurement_unit', measurement_unit)) ingredient 
     FROM ingredients GROUP BY recipe_id) i ON i.recipe_id = r.id WHERE r.id = ${id} 
     `
   const results = await db(query)

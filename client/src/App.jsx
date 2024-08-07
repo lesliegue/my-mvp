@@ -10,22 +10,21 @@ function App() {
 
 
   return (
-    <>
-  
-      <h1>My recipes</h1>
+    <div className='home'>
+      <h1>Leslie's recipes</h1>
+      <p className='home-p'>Welcome! Here I will be uploading my latest recipes. To get all the details, just click on the image of the one that catches your eye ;)</p>
       <div className="navbar">
         <Link to="/">Home</Link>
-        <Link to="/SingleRecipe/:id">Single recipe</Link>
         <Link to="/RecipesForm">Submit a recipe</Link>
       </div>
 
       <Routes>
         <Route path="/" element={< AllRecipes />} />
-          <Route path="/SingleRecipe/:id" element={< SingleRecipe />} />
+        <Route path="/SingleRecipe/:id" element={< SingleRecipe />} />
         <Route path="/RecipesForm" element={< RecipesForm />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
