@@ -27,7 +27,7 @@ export default function SingleRecipe() {
                     <img src={recipe[0].image}/>
                     <div className="sr-text">
                         <div>
-                        <h3>{recipe[0].title}</h3>
+                        <h3 className="r-title">{recipe[0].title}</h3>
                         <p>{recipe[0].description}</p>
                         <hr class="dashed"></hr>
                         <p>{recipe[0].notes}</p>

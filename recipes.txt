@@ -30,13 +30,73 @@ RECIPES
 "servings": 25,
 "notes": "Depending on the size of each profiterol you could have anywhere from 20 to 45 units. The choux pastry is very versatile and may be accompanied by either sweet or savory fillings. Bite-sized delicacy great for parties and dessert tables."}
 
+{"title": "Carrot cake",
+"image": "https://i.postimg.cc/jjqXvwf5/20240518-161553.jpg",
+"description": "First, begin by mixing the eggs and sugar thoroughly on high speed till almost reaching soft peaks. Proceed by adding the oil slowly, then start incorporating the flour and spices by hand with a scrapper, one spoon at the time. Finish with adding the shredded carrot carefully till fully combined. Pour the batter evenly in 3 15cm molds and put in the oven for 25 minutes at 170° C. You know it''s ready when by pinching it with a toothpick, it comes out clean. Wrap each cake in plastic wrapper to keep the moisture in and once completely cooled, fill and decorate with the cream cheese frosting. Optional: add some crushed nuts and shredded carrot for decoration.",
+"servings": 12,
+"notes": "Very tasty and refreshing because of the cream cheese frosting, but if you use that the cake needs to be refrigerated, specially when it''s hot outside. If you want to eat it at room temperature, you can switch to buttercream instead."}
+
+Meringues
+https://i.postimg.cc/3NsLZGV6/20240610-224527.jpg
+Mix egg whites and sugar with your preffered method (it can be either swiss, french or italian meringue) add a little cream of tartar and put in a piping bag, make little swirls on a baking tray previously covered with baking paper. Bake at the lowest temperature possible for at least an hour or until they are dry and can come off the paper easily. Optional: add food coloring or flavours to your liking to make them tastier.
+40
+Easy way to take advantage of egg whites that are left from other recipes. Cute for decoration or bite-size dessert when craving something sweet.
+
+Egg whites
+120
+grams
+
+Sugar
+240
+grams
+
 *///////////////////////////*
 INGREDIENTS
-
-{"name": "Eggs",
-"amount": 8,
-"measurement_unit": "unit"}
 
 {"name": "",
 "amount": 0,
 "measurement_unit": ""}
+
+{"name": "Eggs",
+"amount": 3,
+"measurement_unit": "unit"}
+
+{"name": "Flour",
+"amount": 200,
+"measurement_unit": "grams"}
+
+{"name": "Sunflower Oil",
+"amount": 200,
+"measurement_unit": "grams"}
+
+{"name": "Brown sugar",
+"amount": 250,
+"measurement_unit": "grams"}
+
+{"name": "Baking powder",
+"amount": 2,
+"measurement_unit": "teaspoon"}
+
+{"name": "Cinnamon",
+"amount": 2,
+"measurement_unit": "teaspoon"}
+
+{"name": "Ginger",
+"amount": 1,
+"measurement_unit": "teaspoon"}
+
+{"name": "Walnuts",
+"amount": 100,
+"measurement_unit": "grams"}
+
+{"name": "Cream Cheese",
+"amount": 300,
+"measurement_unit": "grams"}
+
+{"name": "Heavy cream",
+"amount": 150,
+"measurement_unit": "grams"}
+
+{"name": "Powdered sugar",
+"amount": 80,
+"measurement_unit": "grams"}

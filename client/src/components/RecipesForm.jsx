@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import './RecipesForm.css';
 
 export default function RecipesForm() {
     const [newRecipe, setNewRecipe] = useState({
@@ -34,7 +35,7 @@ export default function RecipesForm() {
 
       const handleSubmit = event => {
         event.preventDefault();
-        addRecipe();
+        addRecipe()
       };
 
       const handleSubmitI = event => {
@@ -81,8 +82,10 @@ export default function RecipesForm() {
 
     return (
         <div className="recipe-form">
+          
             <form onSubmit={e => handleSubmit(e)}>
-                <label>Add a new recipe:</label>
+            <label>Add a new recipe:</label>
+            <div className="recipe-inputs">
                 <input type="text" 
                         name = "title"
                         placeholder="Title" 
@@ -104,21 +107,25 @@ export default function RecipesForm() {
                         onChange={e => handleChange(e)} value= {newRecipe.notes}
                         placeholder="Notes"></input>
                 <button type="submit" className="submit-button">Submit recipe</button>
+                </div>
             </form>
+            
+            <hr class="dashed"></hr>
             <form onSubmit={e => handleSubmitI(e)}>
-                <label>And its ingredients:</label>
-                <input type="text" 
-                        name="name"
-                        onChange={e => handleChangeI(e)} value= {newIngredient.name}
-                        placeholder="Name of ingredient"></input>
-                <input type="text" 
-                        name="amount"
-                        placeholder="Amount"
-                        onChange={e => handleChangeI(e)} value= {newIngredient.amount}></input>
-                <input type="text" 
-                        name="measurement_unit"
-                        placeholder="Measurement unit"
-                        onChange={e => handleChangeI(e)} value= {newIngredient.measurement_unit}></input>
+                <p>And its ingredients:</p>
+                <div className="ingredient-inputs">
+                  <input type="text" 
+                          name="name"
+                          onChange={e => handleChangeI(e)} value= {newIngredient.name}
+                          placeholder="Name of ingredient"></input>
+                  <input  name="amount"
+                          placeholder="Amount"
+                          onChange={e => handleChangeI(e)} value= {newIngredient.amount}></input>
+                  <input type="text" 
+                          name="measurement_unit"
+                          placeholder="Measurement unit"
+                          onChange={e => handleChangeI(e)} value= {newIngredient.measurement_unit}></input>
+                  </div>
                 <button type="submit" className="submit-button">Submit ingredient</button>
             </form>
         </div>

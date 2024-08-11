@@ -25,3 +25,32 @@ tr:nth-of-type(odd) {
 tr:nth-of-type(even) {
     background-color:#DFCAC0;
 }
+
+.ingredientTable > table, th, td {
+    border:1px solid black;
+    width: 150px;
+    margin: auto; 
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .recipe-single > img {
+    width: 50%;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  .r-title {
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    padding: 3px 12px;
+    color: #321710;
+    background-color: #C89B9F;
+    border-radius: 10px;
+    margin: 0 2px 5px 0;
+    padding: 3px 12px;
+  }
